@@ -1,4 +1,4 @@
-"Registration Number","Registration Date","Termination Date","Name","Business Name","Address 1","Address 2","City","State","Zip"
+"Registration_Number","Registration_Date","Termination_Date","Name","Business_Name","Address_1","Address_2","City","State","Zip"
 "1","09/14/1942","11/09/1942","Estrangin, Gustave Fritsch","","50 Rockefeller Plaza","Room 523","New York","NY",""
 "10","07/07/1942","01/15/1943","Ramo, Herman Rudolf Kristian","","Finnish Information Center","44 Whitehall Street","New York","NY",""
 "1000","02/18/1957","02/18/1957","Shearman, Sterling & Wright","","20 Exchange Place","","New York","NY",""
