@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           command: |
-            pip install csv-diff
+            sudo pip install csv-diff
             . update_and_commit_all.sh
 workflows:
   version: 2
