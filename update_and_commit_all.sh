@@ -33,7 +33,7 @@ fetch_and_diff () {
 add_and_commit () {
     local csv="$1.csv"
     local commit_txt="$1.commit.txt"
-    git add Street_Tree_List.csv
+    git add $csv
     git commit -F message.txt && \
         git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/simonw/fara-history.git master \
         || true
