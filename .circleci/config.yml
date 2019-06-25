@@ -23,4 +23,4 @@ workflows:
               only:
                 - master
     jobs:
-- update_and_commit_all
+      - update_and_commit_all
