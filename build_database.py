@@ -28,6 +28,13 @@ def make_doc(data):
             # Convert 06/11/2019 to yyyy-mm-dd
             mm, dd, yyyy = value.split("/")
             value = "{}-{}-{}".format(yyyy, mm, dd)
+        # Registration_Number should be an integer
+        if "Registration_Number" == key:
+            if value.isdigit():
+                value = int(value)
+            else:
+                print("Registration_Number is not numeric, skipping: ", data)
+                return None
         new_data[key] = value
     return new_data
 
@@ -45,7 +52,7 @@ if __name__ == "__main__":
         docs = (make_doc(dict(zip(headers, row))) for row in reader)
         table = filename.replace(".csv", "")
         # Using ignore=True because the CSVs contained a duplicate record
-        db[table].insert_all(docs, pk=pks.get(table), ignore=True)
+        db[table].insert_all((d for d in docs if d), pk=pks.get(table), ignore=True)
         # If any column is Registration_Number, set up foreign key
         if "Registration_Number" in headers:
             db[table].add_foreign_key("Registration_Number", "FARA_All_Registrants")

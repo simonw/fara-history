@@ -14,8 +14,7 @@ fetch_and_sort () {
     # This should have created the .csv file
     mv $csv $csv_unsorted
     # Construct new CSV with heading line + sorted other lines
-    head -n 1 $csv_unsorted | tr ' ' '_' > $csv
-    tail -n +2 $csv_unsorted | sort >> $csv
+    python sort_csv.py $csv_unsorted > $csv
     echo "Updated $csv" > $commit_txt
     echo $'\n[skip ci]' >> $commit_txt
 }
