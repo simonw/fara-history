@@ -1,6 +1,7 @@
 name: Fetch latest data, commit, then build and deploy with Datasette
 
 on:
+  repository_dispatch:
   schedule:
     - cron:  '0 0,12 * * *'
 
