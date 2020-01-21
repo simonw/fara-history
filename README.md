@@ -2,6 +2,6 @@
 
 Tracking the history of the FARA data from https://www.justice.gov/nsd-fara
 
-Uses the same technique as [sf-tree-history](https://github.com/simonw/sf-tree-history), as described in [Generating a commit log for San Francisco’s official list of trees](https://simonwillison.net/2019/Mar/13/tree-history/)
+This repository also deploys the latest FARA data as a [Datasette](https://datasette.readthedocs.io/) API here: https://fara.datasettes.com/
 
-The most recent data is available in Datasette at https://fara.datasettes.com/
+See [Deploying a data API using GitHub Actions and Cloud Run](https://simonwillison.net/2020/Jan/21/github-actions-cloud-run/) for background on this project.
