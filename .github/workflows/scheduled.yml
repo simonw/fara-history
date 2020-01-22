@@ -48,4 +48,8 @@ jobs:
         gcloud components install beta
         gcloud config set run/region us-central1
         gcloud config set project datasette-222320
-        datasette publish cloudrun fara.db --service fara-history -m metadata.json --install datasette-json-html --install datasette-atom
+        datasette publish cloudrun fara.db \
+            --service fara-history \
+            -m metadata.json \
+            --install datasette-json-html~=0.6 \
+            --install datasette-atom
