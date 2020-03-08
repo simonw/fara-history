@@ -52,4 +52,5 @@ jobs:
             --service fara-history \
             -m metadata.json \
             --install datasette-json-html~=0.6 \
-            --install datasette-atom
+            --install datasette-atom \
+            --install https://github.com/simonw/datasette-search-all/archive/master.zip
