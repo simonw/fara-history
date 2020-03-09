@@ -53,4 +53,4 @@ jobs:
             -m metadata.json \
             --install datasette-json-html~=0.6 \
             --install datasette-atom \
-            --install datasette-search-all~=0.1.1
+            --install datasette-search-all~=0.2
