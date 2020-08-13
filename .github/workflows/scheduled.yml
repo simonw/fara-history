@@ -51,6 +51,7 @@ jobs:
         datasette publish cloudrun fara.db \
             --service fara-history \
             -m metadata.json \
-            --install datasette-json-html~=0.6 \
+            --install datasette-json-html \
             --install datasette-atom \
-            --install datasette-search-all~=0.2
+            --install datasette-graphql \
+            --install datasette-search-all

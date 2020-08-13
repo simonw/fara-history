@@ -1,4 +1,6 @@
 csv-diff
 datasette
 sqlite-utils
-https://github.com/simonw/datasette-search-all/archive/master.zip
+datasette-atom
+datasette-graphql
+datasette-search-all
