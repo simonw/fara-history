@@ -4,7 +4,7 @@ import sys
 
 
 def sort_csv(filename, outfile=sys.stdout, underscores_in_headers=True):
-    reader = csv.reader(open(filename))
+    reader = csv.reader(open(filename, encoding="latin-1"))
     headers = next(reader)
     if underscores_in_headers:
         headers = [h.replace(" ", "_") for h in headers]
